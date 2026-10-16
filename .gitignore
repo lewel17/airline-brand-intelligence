@@ -1,0 +1,28 @@
+# Dati pesanti o di terzi (vedi data/README.md)
+data/raw/
+data/processed/
+*.csv
+!data/dashboard_data.csv
+!data/results/*.csv
+
+# Modelli (centinaia di MB)
+models/
+modello_finetuned/
+checkpoint-*/
+*.safetensors
+*.pt
+*.bin
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Segreti
+.env
+.streamlit/secrets.toml
+
+# Sistema
+.DS_Store
+.vscode/
